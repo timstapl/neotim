@@ -43,7 +43,7 @@ lazy.setup({
 	---
 	--- Style
 	---
-	require("plugins.melange"),
+	require("plugins.nord"),
 	require("plugins.dashboard"),
 	require("plugins.ccc"),
 	require("plugins.bufferline"),

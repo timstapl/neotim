@@ -1,2 +1,3 @@
 vim.opt.termguicolors = true
-vim.cmd.colorscheme 'melange'
+vim.opt.background = 'dark'
+vim.cmd.colorscheme 'nord'
