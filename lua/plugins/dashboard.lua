@@ -66,7 +66,7 @@ return {
 						action = "ObsidianToday",
 					},
 					{
-						icon = "󰎌  ",
+						icon = "󱙓  ",
 						icon_hl = "String",
 						desc = "Notes         ",
 						desc_hl = "String",
