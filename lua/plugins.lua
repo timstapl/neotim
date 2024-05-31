@@ -43,7 +43,7 @@ lazy.setup({
 	---
 	--- Style
 	---
-	require("plugins.nord"),
+	require("plugins.nordic"),
 	require("plugins.dashboard"),
 	require("plugins.ccc"),
 	require("plugins.bufferline"),
@@ -59,8 +59,11 @@ lazy.setup({
 	require("plugins.nvimtree"),
 	require("plugins.toggleterm"),
 	require("plugins.lazygit"),
+	require("plugins.gitlab"),
 	require("plugins.obsidian"),
-	require("plugins.mdtohtml"),
+	require("plugins.markdown_preview"),
+	require("plugins.telekasten"),
+
 
 	---
 	--- Languages
