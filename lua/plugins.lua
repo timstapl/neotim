@@ -60,7 +60,6 @@ lazy.setup({
 	require("plugins.toggleterm"),
 	require("plugins.lazygit"),
 	require("plugins.gitlab"),
-	require("plugins.obsidian"),
 	require("plugins.markdown_preview"),
 	require("plugins.telekasten"),
 

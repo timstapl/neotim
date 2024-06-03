@@ -48,7 +48,7 @@ return {
 						action = "Telescope find_files find_command=rg,--hidden,--files",
 					},
 					{
-						icon = "⚙  ",
+						icon = "  ",
 						icon_hl = "Constant",
 						desc = "Config         ",
 						desc_hl = "Special",
@@ -63,7 +63,7 @@ return {
 						desc_hl = "Special",
 						key = "t",
 						key_hl = "Error",
-						action = "ObsidianToday",
+						action = "Telekasten goto_today",
 					},
 					{
 						icon = "󱙓  ",
@@ -72,7 +72,7 @@ return {
 						desc_hl = "Special",
 						key = "o",
 						key_hl = "Error",
-						action = "ObsidianSearch",
+						action = "Telekasten find_notes",
 					},
 					{
 						icon = "󱘒  ",
@@ -81,7 +81,7 @@ return {
 						desc_hl = "Special",
 						key = "n",
 						key_hl = "Error",
-						action = "ObsidianNew",
+						action = "Telekasten new_note",
 					},
 					{
 						icon = "  ",
