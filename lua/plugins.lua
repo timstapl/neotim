@@ -59,6 +59,7 @@ lazy.setup({
 	require("plugins.nvimtree"),
 	require("plugins.toggleterm"),
 	require("plugins.lazygit"),
+	require("plugins.fugitive"),
 	require("plugins.gitlab"),
 	require("plugins.markdown_preview"),
 	require("plugins.telekasten"),

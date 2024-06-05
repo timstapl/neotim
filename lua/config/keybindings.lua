@@ -23,10 +23,15 @@ wk.register({
 --
 -- Git
 --
+vim.cmd([[
+  let g:fugitive_gitlab_domains = ['https://git.nikolamotor.com/']
+]])
+-- lvim.builtin.which_key.mappings["go"] = { "<cmd>GBrowse<cr>", "Open In Gitlab" }
 wk.register({
 	["<leader>g"] = {
 		name = "Git",
 		g = { "<cmd>LazyGit<cr>", "LazyGit" },
+		o = { "<cmd>GBrowse<cr>", "Open in Gitlab" },
 	}
 })
 
@@ -115,3 +120,4 @@ vim.keymap.set("n", "glM", gitlab.merge)
 vim.keymap.set("n", "glu", gitlab.copy_mr_url)
 vim.keymap.set("n", "glP", gitlab.publish_all_drafts)
 vim.keymap.set("n", "glD", gitlab.toggle_draft_mode)
+
