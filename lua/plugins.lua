@@ -43,12 +43,20 @@ lazy.setup({
 	---
 	--- Style
 	---
-	require("plugins.nordic"),
+	require("plugins.gruvbox"),
 	require("plugins.dashboard"),
 	require("plugins.ccc"),
 	require("plugins.bufferline"),
 	require("plugins.lualine"),
 	require("plugins.noice"),
+
+	---
+	--- Git Utils
+	---
+	require("plugins.lazygit"),
+	require("plugins.fugitive"),
+	require("plugins.gitlab"),
+	require("plugins.gitsigns"),
 
 	---
 	--- Utils
@@ -58,18 +66,24 @@ lazy.setup({
 	require("plugins.tmux"),
 	require("plugins.nvimtree"),
 	require("plugins.toggleterm"),
-	require("plugins.lazygit"),
-	require("plugins.fugitive"),
-	require("plugins.gitlab"),
+	require("plugins.trouble"),
+	require("plugins.ufo"),
+	require("plugins.precognition"),
+
+	---
+	--- Notes
+	---
 	require("plugins.markdown_preview"),
 	require("plugins.telekasten"),
+	require("plugins.outline"),
+	require("plugins.follow_md_links"),
 
 
 	---
 	--- Languages
 	---
 	require("plugins.crystal"),
-	-- require("plugins.markdown"),
+	require("plugins.markdown"),
 
 	---
 	--- Keybinds

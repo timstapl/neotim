@@ -62,17 +62,22 @@ wk.register({
 		f = { "<cmd>Telekasten find_notes<cr>", "Find Notes" },
 		g = { "<cmd>Telekasten search_notes<cr>", "Search Notes" },
 		d = { "<cmd>Telekasten goto_today<cr>", "Today's Note" },
-		z = { "<cmd>Telekasten follow_link<cr>", "Follow Link" },
+		-- z = { "<cmd>Telekasten follow_link<cr>", "Follow Link" },
 		n = { "<cmd>Telekasten new_note<cr>", "New Note" },
 		c = { "<cmd>Telekasten show_calendar<cr>", "Calendar" },
 		b = { "<cmd>Telekasten show_backlinks<cr>", "Backlinks" },
 		I = { "<cmd>Telekasten insert_img_link<cr>", "Insert Image" },
+		m = { "<cmd>Telekasten toggle_todo<cr>", "Toggle Todo" },
 	}
 })
 
 wk.register({
 	["<leader>n"] = { "<cmd>Telekasten panel<cr>", "Notes" }
 })
+-- toggle checked / create checkbox if it doesn't exist
+--vim.keymap.set('n', '<leader>nn', require('markdown-togglecheck').toggle, { desc = 'Toggle Checkmark' });
+-- toggle checkbox (it doesn't remember toggle state and always creates [ ])
+--vim.keymap.set('n', '<leader>nN', require('markdown-togglecheck').toggle_box, { desc = 'Toggle Checkbox' });
 
 -- Launch panel if nothing is typed after <leader>z
 -- vim.keymap.set("n", "<leader>z", "<cmd>Telekasten panel<CR>")
@@ -121,3 +126,8 @@ vim.keymap.set("n", "glu", gitlab.copy_mr_url)
 vim.keymap.set("n", "glP", gitlab.publish_all_drafts)
 vim.keymap.set("n", "glD", gitlab.toggle_draft_mode)
 
+
+---
+--- Remove default keybind for ' in normal mode
+--- TODO: there has to be a better way to do this, but this will work for now
+vim.keymap.set("n", "'", "<cmd><cr>")
