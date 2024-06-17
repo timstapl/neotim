@@ -42,7 +42,7 @@ wk.register({
 	["<leader>b"] = {
 		name = "Buffers",
 		h = { "<cmd>BufferLineCyclePrev<cr>", "Previous Buffer" },
-		c = { "<cmd>bd<cr>", "Close Buffer" },
+		c = { "<cmd>bw<cr>", "Close Buffer" },
 		l = { "<cmd>BufferLineCycleNext<cr>", "Next Buffer" },
 		w = { "<cmd>w<cr>", "Write" },
 	}
@@ -68,12 +68,20 @@ wk.register({
 		b = { "<cmd>Telekasten show_backlinks<cr>", "Backlinks" },
 		I = { "<cmd>Telekasten insert_img_link<cr>", "Insert Image" },
 		m = { "<cmd>Telekasten toggle_todo<cr>", "Toggle Todo" },
+		t = { "<cmd>Telekasten new_templated_note<cr>", "New Note From Template" },
 	}
 })
 
+--
+-- Dashboard
+--
 wk.register({
-	["<leader>n"] = { "<cmd>Telekasten panel<cr>", "Notes" }
+	["<leader>h"] = { "<cmd>Dashboard<cr>", "Home"}
 })
+
+-- wk.register({
+-- 	["<leader>n"] = { "<cmd>Telekasten panel<cr>", "Notes" }
+-- })
 -- toggle checked / create checkbox if it doesn't exist
 --vim.keymap.set('n', '<leader>nn', require('markdown-togglecheck').toggle, { desc = 'Toggle Checkmark' });
 -- toggle checkbox (it doesn't remember toggle state and always creates [ ])
