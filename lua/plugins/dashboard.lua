@@ -99,14 +99,14 @@ return {
 					string.format("%d plugins loaded", require("lazy").stats().count),
 				},
 			},
-      preview = {
-				-- TODO: need to create a set of fallbacks, tte > lolcrab > lolcat > cat, or similar
-        -- command = "lolcrab -a -d 1",
-				command = "tte expand < ",
-        file_path = "/home/tim/.config/nvim/ascii/neotim.ascii",
-        file_width = 60,
-        file_height = 17,
-      },
+				--   preview = {
+				-- -- TODO: need to create a set of fallbacks, tte > lolcrab > lolcat > cat, or similar
+				--     -- command = "lolcrab -a -d 1",
+				-- command = "tte expand < ",
+				--     file_path = "/home/tim/.config/nvim/ascii/neotim.ascii",
+				--     file_width = 60,
+				--     file_height = 17,
+				--   },
     })
   end
 }

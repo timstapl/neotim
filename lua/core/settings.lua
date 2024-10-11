@@ -6,6 +6,7 @@ vim.opt.clipboard="unnamedplus"
 vim.opt.tabstop=2
 vim.opt.shiftwidth=2
 vim.opt.softtabstop=2
+vim.opt.expandtab=true
 
 -- Conceal for Markdown, etc
 vim.opt.conceallevel=1
@@ -38,3 +39,8 @@ vim.api.nvim_create_autocmd('BufWinEnter', {
 		]])
 	end,
 })
+
+-- let g:markdown_fenced_languages = 
+vim.g.markdown_fenced_languages = {'html', 'python', 'lua', 'vim', 'typescript', 'javascript', 'json', 'crystal', 'mermaid' }
+-- don't conceal quotes in json, I hate that
+vim.g.vim_json_conceal=0

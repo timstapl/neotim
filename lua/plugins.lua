@@ -77,6 +77,8 @@ lazy.setup({
 	require("plugins.telekasten"),
 	require("plugins.outline"),
 	require("plugins.follow_md_links"),
+	require("plugins.mdeval"),
+  require("plugins.org"),
 
 
 	---
@@ -89,5 +91,10 @@ lazy.setup({
 	--- Keybinds
 	---
 	require("plugins.whichkey"),
+
+	---
+	--- misc
+	---
+  require("plugins.encourage"),
 })
 
