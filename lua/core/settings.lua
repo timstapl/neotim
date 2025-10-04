@@ -41,6 +41,6 @@ vim.api.nvim_create_autocmd('BufWinEnter', {
 })
 
 -- let g:markdown_fenced_languages = 
-vim.g.markdown_fenced_languages = {'html', 'python', 'lua', 'vim', 'typescript', 'javascript', 'json', 'crystal', 'mermaid' }
+vim.g.markdown_fenced_languages = {'html', 'python', 'lua', 'vim', 'typescript', 'javascript', 'json', 'crystal', 'mermaid', 'groovy', 'sql', 'clojure' }
 -- don't conceal quotes in json, I hate that
 vim.g.vim_json_conceal=0

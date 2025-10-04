@@ -55,7 +55,7 @@ lazy.setup({
 	---
 	require("plugins.lazygit"),
 	require("plugins.fugitive"),
-	require("plugins.gitlab"),
+	-- require("plugins.gitlab"),
 	require("plugins.gitsigns"),
 
 	---
@@ -70,15 +70,21 @@ lazy.setup({
 	require("plugins.ufo"),
 	require("plugins.precognition"),
 
+  ---
+  --- Debugging
+  ---
+  require("plugins.dap"),
+
 	---
 	--- Notes
 	---
 	require("plugins.markdown_preview"),
-	require("plugins.telekasten"),
-	require("plugins.outline"),
 	require("plugins.follow_md_links"),
-	require("plugins.mdeval"),
-  require("plugins.org"),
+  require("plugins.wiki"),
+	-- require("plugins.telekasten"),
+	-- require("plugins.outline"),
+	-- require("plugins.mdeval"),
+  -- require("plugins.org"),
 
 
 	---
@@ -86,6 +92,15 @@ lazy.setup({
 	---
 	require("plugins.crystal"),
 	require("plugins.markdown"),
+  require("plugins.poetry"),
+
+  ---
+  --- Clojure Stuff
+  ---
+  require("plugins.dispatch"),
+  require("plugins.conjure"),
+  require("plugins.jack-in"),
+
 
 	---
 	--- Keybinds
@@ -96,5 +111,8 @@ lazy.setup({
 	--- misc
 	---
   require("plugins.encourage"),
+  require("plugins.rainbow"),
+  require("plugins.timerly"),
+  require("plugins.zen"),
 })
 

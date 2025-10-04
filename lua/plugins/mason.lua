@@ -30,9 +30,7 @@ return {
 			require('mason-lspconfig').setup({
 				ensure_installed = {
 					"crystalline",
-					"tsserver",
 					"tailwindcss",
-					"volar",
 					"taplo",
 					"rust_analyzer",
 					"lua_ls",
