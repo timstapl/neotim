@@ -29,6 +29,6 @@
 ;                                             })
 
 ; support for syntax in code blocks
-(set vim.g.markdown_fenced_languages [:html :python :lua :vim :typescript :javascript :json :crystal :mermaid :groovy :sql :clojure])
+(set vim.g.markdown_fenced_languages [:html :python :lua :vim :typescript :javascript :json :mermaid :groovy :sql :clojure])
 ; dont hide quotes in json, it drives me bonkers
 (set vim.g.vim_json_conceal 0)
