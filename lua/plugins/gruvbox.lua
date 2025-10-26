@@ -1,3 +1,2 @@
-return {
-  'sainnhe/gruvbox-material',
-}
+-- [nfnl] fnl/plugins/gruvbox.fnl
+return {"sainnhe/gruvbox-material"}

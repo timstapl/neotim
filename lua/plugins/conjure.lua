@@ -1,1 +1,2 @@
-return { "Olical/conjure" }
+-- [nfnl] fnl/plugins/conjure.fnl
+return {"Olical/conjure"}

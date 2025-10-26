@@ -1,4 +1,4 @@
--- [nfnl] lua/config/keybindings.fnl
+-- [nfnl] fnl/config/keybindings.fnl
 local wk = require("which-key")
 local function g(_1_)
   local keybind = _1_[1]

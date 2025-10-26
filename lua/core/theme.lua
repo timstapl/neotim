@@ -1,4 +1,4 @@
--- [nfnl] lua/core/theme.fnl
+-- [nfnl] fnl/core/theme.fnl
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.g.gruvbox_material_transparent_background = 2

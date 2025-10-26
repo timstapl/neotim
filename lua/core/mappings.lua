@@ -1,4 +1,4 @@
--- [nfnl] lua/core/mappings.fnl
+-- [nfnl] fnl/core/mappings.fnl
 vim.g.mapleader = " "
 local opts = {noremap = true, silent = false}
 local nvmap = vim.api.nvim_set_keymap

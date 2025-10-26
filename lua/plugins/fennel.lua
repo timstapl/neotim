@@ -1,1 +1,2 @@
-return { "bakpakin/fennel.vim" }
+-- [nfnl] fnl/plugins/fennel.fnl
+return {"bakpakin/fennel.vim"}

@@ -55,6 +55,7 @@
              (require :plugins.markdown_preview)
              (require :plugins.follow_md_links)
              (require :plugins.wiki)
+             (require :plugins.recollect)
              ;; (require :plugins.telekasten)
              ;; (require :plugins.outline)
              ;; (require :plugins.mdeval)
@@ -74,7 +75,12 @@
              ;; keybinds
              (require :plugins.whichkey)
 
+             ;; database
+             ;(require :plugins.dbee)
+             (require :plugins.dbout)
+
              ;; misc
+             (require :plugins.todo-comments)
              (require :plugins.encourage)
              (require :plugins.rainbow)
              ;; (require :plugins.timerly)

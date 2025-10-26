@@ -1,4 +1,4 @@
--- [nfnl] lua/core/settings.fnl
+-- [nfnl] fnl/core/settings.fnl
 vim.opt.nu = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.tabstop = 2
