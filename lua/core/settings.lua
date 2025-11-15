@@ -12,4 +12,6 @@ vim.opt.foldlevelstart = 4
 vim.opt.foldnestmax = 4
 vim.g.markdown_fenced_languages = {"html", "python", "lua", "vim", "typescript", "javascript", "json", "mermaid", "groovy", "sql", "clojure"}
 vim.g.vim_json_conceal = 0
+vim.g.NERDTreeHijackNetrw=1
+vim.g.WebDevIconsUnicodeDecorateFolderNodes=1
 return nil

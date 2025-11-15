@@ -13,7 +13,14 @@ return {
 		cmp.setup({
 			sources = {
 				{ name = 'path' },
-				{ name = 'nvim_lsp' },
+				{
+          name = 'nvim_lsp',
+          option = {
+            markdown_oxide = {
+              keyword_pattern = [[\(\k\| \|\/\|#\)\+]]
+            }
+          }
+        },
 				{ name = 'luasnip', keyword_length = 2},
 				{ name = 'buffer', keyword_length = 3 },
 			},

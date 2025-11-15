@@ -3,7 +3,7 @@
   :opts {
          :wiki_dirs [
                      { :name "Work" :path "~/Documents/wiki/gravie" }
-                     { :name "Personal" :path "~/Documents/wiki/personal" }
+                     ;; { :name "Personal" :path "~/Documents/wiki/personal" }
                     ]
         }
   :keys [

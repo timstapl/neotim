@@ -31,6 +31,7 @@
              (require :plugins.bufferline)
              (require :plugins.lualine)
              (require :plugins.noice)
+             (require :plugins.inline-diagnostic)
 
              ;; git
              (require :plugins.lazygit)
@@ -43,6 +44,7 @@
              (require :plugins.mini)
              (require :plugins.tmux)
              (require :plugins.nvimtree)
+             (require :plugins.nerdtree)
              (require :plugins.toggleterm)
              (require :plugins.trouble)
              (require :plugins.ufo)
@@ -68,9 +70,9 @@
              (require :plugins.poetry)
 
              ;; clojure specific
-             (require :plugins.dispatch)
-             (require :plugins.conjure)
-             (require :plugins.jack-in)
+             ;;(require :plugins.dispatch)
+             ;;(require :plugins.conjure)
+             ;;(require :plugins.jack-in)
 
              ;; keybinds
              (require :plugins.whichkey)

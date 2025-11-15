@@ -36,6 +36,7 @@ return {
 					"lua_ls",
 					"jsonls",
 					"clangd",
+          "markdown_oxide",
 				},
 				handlers = {
 					function(server_name)

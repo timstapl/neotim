@@ -1,3 +1,3 @@
-[
-	:neovim/nvim-lspconfig
-]
+{
+	1 :neovim/nvim-lspconfig
+}
