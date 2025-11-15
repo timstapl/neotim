@@ -48,7 +48,7 @@
              (require :plugins.toggleterm)
              (require :plugins.trouble)
              (require :plugins.ufo)
-             ;; (require :plugins.precognition)
+             (require :plugins.inline-diagnostics)
 
              ;; debugging
              (require :plugins.dap)
