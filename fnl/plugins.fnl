@@ -86,4 +86,5 @@
              (require :plugins.rainbow)
              ;; (require :plugins.timerly)
              (require :plugins.zen)
+             (require :plugins.strudel)
 ]))
