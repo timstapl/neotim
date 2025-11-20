@@ -31,7 +31,6 @@
              (require :plugins.bufferline)
              (require :plugins.lualine)
              (require :plugins.noice)
-             (require :plugins.inline-diagnostic)
 
              ;; git
              (require :plugins.lazygit)
@@ -48,7 +47,7 @@
              (require :plugins.toggleterm)
              (require :plugins.trouble)
              (require :plugins.ufo)
-             (require :plugins.inline-diagnostics)
+             (require :plugins.inline-diagnostic)
 
              ;; debugging
              (require :plugins.dap)
