@@ -37,6 +37,13 @@
 ])
 
 ;;
+;; Whaler
+;;
+(wk.add [
+  (c ["p" "Whaler" "Open Project"])
+])
+
+;;
 ;; Telescope
 ;;
 (wk.add [

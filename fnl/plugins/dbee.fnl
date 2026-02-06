@@ -8,6 +8,7 @@
     (dbee.setup {
       :sources [
         (src.FileSource:new (.. (vim.fn.stdpath "cache") "/dbee/persistence.json"))
+        (src.EnvSource:new "DBEE_CONNECTIONS")
       ]
     })
   ))

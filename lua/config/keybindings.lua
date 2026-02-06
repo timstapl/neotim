@@ -12,6 +12,7 @@ local function c(_2_)
   return {("<leader>" .. keybind), ("<cmd>" .. command .. "<cr>"), desc = description}
 end
 wk.add({c({"e", "NvimTreeToggle", "File Tree"})})
+wk.add({c({"p", "Whaler", "Open Project"})})
 wk.add({g({"s", "Search"}), c({"sb", "Telescope buffers", "Find Buffer"}), c({"sb", "Telescope buffers", "Find Buffer"}), c({"sf", "Telescope find_files", "Find File"}), c({"sn", "enew", "New File"}), c({"sr", "Telescope oldfiles", "Open Recent File"}), c({"st", "Telescope live_grep", "Find Text"})})
 wk.add({g({"g", "Git"}), c({"gg", "LazyGit", "LazyGit"}), c({"go", "GBrowse", "Open in Gitlab"})})
 wk.add({g({"b", "Buffers"}), c({"bh", "BufferLineCyclePrev", "Previous Buffer"}), c({"bc", "bw", "Close Buffer"}), c({"bl", "BufferLineCycleNext", "Next Buffer"}), c({"bw", "w", "Write"})})

@@ -52,6 +52,9 @@
              ;; debugging
              (require :plugins.dap)
 
+             ;;todo
+             ;;(require :plugins.dooing)
+
              ;; notes
              (require :plugins.markdown_preview)
              (require :plugins.follow_md_links)
@@ -67,16 +70,18 @@
              ;; (require :plugins.crystal)
              (require :plugins.markdown)
              (require :plugins.poetry)
+             (require :plugins.elixir)
 
              ;; clojure specific
-             ;;(require :plugins.dispatch)
-             ;;(require :plugins.conjure)
-             ;;(require :plugins.jack-in)
+             (require :plugins.dispatch)
+             (require :plugins.conjure)
+             (require :plugins.jack-in)
 
              ;; keybinds
              (require :plugins.whichkey)
 
              ;; database
+             (require :plugins.dadbod)
              ;(require :plugins.dbee)
              (require :plugins.dbout)
 
@@ -87,4 +92,8 @@
              ;; (require :plugins.timerly)
              (require :plugins.zen)
              (require :plugins.strudel)
+             (require :plugins.surround)
+             (require :plugins.repeat)
+             (require :plugins.jira)
+             (require :plugins.whaler)
 ]))

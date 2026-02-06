@@ -5,10 +5,12 @@ return {
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
 		"saadparwaiz1/cmp_luasnip",
+    "kristijanhusak/vim-dadbod-completion",
 	},
 	config = function()
 		local cmp = require('cmp')
 		local cmp_select = {behavior = cmp.SelectBehavior.Select}
+    -- local lspkind = require("lspkind")
 
 		cmp.setup({
 			sources = {
@@ -21,6 +23,7 @@ return {
             }
           }
         },
+        { name = "vim-dadbod-completion" },
 				{ name = 'luasnip', keyword_length = 2},
 				{ name = 'buffer', keyword_length = 3 },
 			},
@@ -36,9 +39,24 @@ return {
 			},
 			snippet = {
 				expand = function(args)
-					require('luasnip').lsp_expand(args.body)
+					require('cmp_luasnip').lsp_expand(args.body)
 				end,
 			},
+      formatting = {
+        format = function(entry, vim_item)
+          vim_item.menu = ({
+            rg = '[Rg]',
+            buffer = '[Buffer]',
+            nvim_lsp = '[LSP]',
+            vsnip = '[Snippet]',
+            tags = '[Tag]',
+            path = '[Path]',
+            orgmode = '[Org]',
+            ['vim-dadbod-completion'] = '[DB]',
+          })[entry.source.name]
+          return vim_item
+        end,
+      },
 		})
 	end
 }
