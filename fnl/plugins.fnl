@@ -96,4 +96,5 @@
              (require :plugins.repeat)
              (require :plugins.jira)
              (require :plugins.whaler)
+             (require :plugins.wrapped)
 ]))
