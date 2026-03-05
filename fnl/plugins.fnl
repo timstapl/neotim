@@ -82,13 +82,11 @@
 
              ;; database
              (require :plugins.dadbod)
-             ;(require :plugins.dbee)
              (require :plugins.dbout)
 
              ;; misc
              (require :plugins.todo-comments)
              (require :plugins.encourage)
-             (require :plugins.rainbow)
              ;; (require :plugins.timerly)
              (require :plugins.zen)
              (require :plugins.strudel)

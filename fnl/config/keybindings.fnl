@@ -49,7 +49,6 @@
 (wk.add [
  (g ["s" "Search"])
  (c ["sb" "Telescope buffers" "Find Buffer"])
- (c ["sb" "Telescope buffers"    "Find Buffer"])
  (c ["sf" "Telescope find_files" "Find File"])
  (c ["sn" "enew"                 "New File"])
  (c ["sr" "Telescope oldfiles"   "Open Recent File"])

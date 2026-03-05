@@ -1,16 +1,11 @@
-;; TODO: should extract this out to a shared util method
-(local device (case (os.getenv "HOSTNAME")
-                :fedora :home-desktop
-                _ :unknown
-                ))
-;; (print "Device Detected In Whaler? " device)
+(local device (require :../utils/device))
 
 {
   1 :SalOrak/whaler
   :opts {
-          :directories (case device
+          :directories (case (device.identify-host)
                          :home-desktop [{:path "~/Projects/" }] 
-                         :unknown [
+                         :gravie-macbook [
                           {:path "~/projects/gravie/comfort/repos/core-services/" :alias :comfort-core }
                           {:path "~/projects/gravie/comfort/repos/dbschema/" :alias :comfort-db }
                           {:path "~/projects/gravie/comfort/repos/tools/" :alias :comfort-tools }
@@ -24,7 +19,8 @@
                           {:path "~/projects/gravie/ichra/repos/" :alias :ichra }
  
                           {:path "~/projects/gravie/platform/repos/" :alias :platform }
-                       ])
+                          ]
+                         :unknown [])
           :picker :telescope
           :file_explorer :nvimtree
         }

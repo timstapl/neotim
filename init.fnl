@@ -4,16 +4,6 @@
 
 ;; (local nfnl (require :nfnl.api))
 
-;; get hostname
-;; (local hostname (os.getenv "HOSTNAME"))
-
-(local device (case (os.getenv "HOSTNAME")
-               :fedora :home-desktop
-               _ :unknown
-               ))
-
-(print "Device Detected? " device)
-
 (require :core.mappings)
 (require :core.settings)
 (require :plugins)

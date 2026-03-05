@@ -1,10 +1,13 @@
+(local device (require :../utils/device))
+
 {
   1 :echaya/neowiki.nvim
   :opts {
-         :wiki_dirs [
-                     { :name "Work" :path "~/Documents/wiki/gravie" }
-                     ;; { :name "Personal" :path "~/Documents/wiki/personal" }
-                    ]
+         :wiki_dirs (case (device.identify-host)
+                      :home-desktop   [ { :name "Personal" :path "~/Documents/wiki/personal" } ]
+                      :gravie-macbook [ { :name "Work" :path "~/Documents/wiki/gravie" } ]
+                      [:unknown _]    []
+                      )
         }
   :keys [
          {
