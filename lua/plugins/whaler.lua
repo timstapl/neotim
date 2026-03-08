@@ -1,5 +1,6 @@
 -- [nfnl] fnl/plugins/whaler.fnl
 local device = require("../utils/device")
+print("device: ", device["identify-host"]())
 local _2_
 do
   local case_1_ = device["identify-host"]()

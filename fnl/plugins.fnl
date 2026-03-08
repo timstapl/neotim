@@ -49,8 +49,6 @@
              (require :plugins.ufo)
              (require :plugins.inline-diagnostic)
 
-             ;; debugging
-             (require :plugins.dap)
 
              ;;todo
              ;;(require :plugins.dooing)
@@ -86,7 +84,6 @@
 
              ;; misc
              (require :plugins.todo-comments)
-             (require :plugins.encourage)
              ;; (require :plugins.timerly)
              (require :plugins.zen)
              (require :plugins.strudel)

@@ -1,5 +1,7 @@
 (local device (require :../utils/device))
 
+(print "device: " (device.identify-host))
+
 {
   1 :SalOrak/whaler
   :opts {

@@ -1,31 +1,21 @@
-return {
-	'akinsho/bufferline.nvim',
-	version = "*",
-	dependencies = 'nvim-tree/nvim-web-devicons',
-	config = function()
-		require("bufferline").setup {
-			options = {
-				separator_style = "slant",
-				--always_show_bufferline = false,
-        diagnostics = "nvim_lsp" or "coc", -- | "coc"
-				offsets = {
-          {
-            filetype = "NvimTree",
-            text = "Nvim Tree",
-						separator = true,
-            text_align = "left",
-          },
-        },
-        diagnostics_indicator = function(count, level, diagnostics_dict, context)
-          local s = " "
-          for e, n in pairs(diagnostics_dict) do
-            local sym = e == "error" and " "
-              or (e == "warning" and " " or "" )
-            s = s .. n .. sym
-          end
-          return s
-        end
-			}
-		}
-	end,
-}
+-- [nfnl] fnl/plugins/bufferline.fnl
+local function _1_()
+  local bufferline = require("bufferline")
+  local function _2_(_count, _level, diagnostics_dict, _context)
+    local s = " "
+    for key, value in pairs(diagnostics_dict) do
+      local sym
+      if (key == "error") then
+        sym = "\239\129\151 "
+      elseif (key == "warning") then
+        sym = "\239\129\177 "
+      else
+        sym = "\239\132\169"
+      end
+      s = (s .. value .. sym)
+    end
+    return s
+  end
+  return bufferline.setup({options = {separator_style = "slant", diagnostics = "nvim_lsp", offsets = {{filetype = "NvimTree", text = "Nvim Tree", separator = true, text_align = "left"}}, diagnostics_indicator = _2_}})
+end
+return {"akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons", config = _1_}
