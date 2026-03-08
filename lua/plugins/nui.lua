@@ -1,3 +1,2 @@
-return {
-  'MunifTanjim/nui.nvim',
-}
+-- [nfnl] fnl/plugins/nui.fnl
+return {"MunifTanjim/nui.nvim"}

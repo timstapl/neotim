@@ -60,7 +60,6 @@
              (require :plugins.recollect)
              ;; (require :plugins.telekasten)
              ;; (require :plugins.outline)
-             ;; (require :plugins.mdeval)
              ;; (require :plugins.org)
 
              ;; languages

@@ -1,15 +1,5 @@
-return {
-	"nvim-tree/nvim-tree.lua",
-	config = function()
-		require("nvim-tree").setup({
-			update_focused_file = {
-        enable = true,
-        update_root = {
-          enable = true,
-          ignore_list = {},
-        },
-        exclude = false,
-      },
-		})
-	end
-}
+-- [nfnl] fnl/plugins/nvimtree.fnl
+local function _1_()
+  return require("nvim-tree").setup({update_focused_file = {enable = true, update_root = {enable = true, ignore_list = {}}, exclude = false}})
+end
+return {"nvim-tree/nvim-tree.lua", config = _1_}

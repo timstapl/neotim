@@ -1,4 +1,2 @@
-return {
-  "Olical/nfnl",
-  ft = "fennel"
-}
+-- [nfnl] fnl/plugins/nfnl.fnl
+return {"Olical/nfnl", ft = "fennel"}

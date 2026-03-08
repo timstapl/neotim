@@ -1,9 +1,6 @@
-return {
-  'echasnovski/mini.nvim',
-  config = function ()
-    require('mini.align').setup()
-    require('mini.indentscope').setup()
-		--require('mini.tabline').setup()
-		-- require('mini.statusline').setup()
-  end
-}
+-- [nfnl] fnl/plugins/mini.fnl
+local function _1_()
+  require("mini.align").setup()
+  return require("mini.indentscope").setup()
+end
+return {"echasnovski/mini.nvim", config = _1_}
