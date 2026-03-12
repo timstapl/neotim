@@ -51,20 +51,15 @@
 
 
              ;;todo
-             ;;(require :plugins.dooing)
 
              ;; notes
              (require :plugins.markdown_preview)
              (require :plugins.follow_md_links)
-             (require :plugins.wiki)
-             (require :plugins.recollect)
-             ;; (require :plugins.telekasten)
-             ;; (require :plugins.outline)
-             ;; (require :plugins.org)
+             (require :plugins.telekasten)
+             (require :plugins.outline)
 
              ;; languages
              (require :plugins.fennel)
-             ;; (require :plugins.crystal)
              (require :plugins.markdown)
              (require :plugins.poetry)
              (require :plugins.elixir)
@@ -83,7 +78,6 @@
 
              ;; misc
              (require :plugins.todo-comments)
-             ;; (require :plugins.timerly)
              (require :plugins.zen)
              (require :plugins.strudel)
              (require :plugins.surround)
@@ -91,4 +85,13 @@
              (require :plugins.jira)
              (require :plugins.whaler)
              (require :plugins.wrapped)
+             (require :plugins.pyrola)
+
+             ;; TODO: Planning to remove if I don't need these again soon
+             ;; (require :plugins.dooing)
+             ;; (require :plugins.wiki)
+             ;; (require :plugins.recollect)
+             ;; (require :plugins.timerly)
+             ;; (require :plugins.crystal)
+             ;; (require :plugins.org)
 ]))

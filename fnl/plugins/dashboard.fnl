@@ -45,7 +45,7 @@
                             :desc_hl  "Special"
                             :key  "f"
                             :key_hl  "Error"
-                            :action  "Telescope find_files find_commandrg--hidden--files"
+                            :action  "Telescope find_files" ;; find_command rg --hidden --files" ;;TODO: Not sure why this part broke?
                           }
                           {
                             :icon  "  "
@@ -54,7 +54,7 @@
                             :desc_hl  "Special"
                             :key  "c"
                             :key_hl  "Error"
-                            :action  "e ~/.config/nvim/init.lua"
+                            :action  "e ~/.config/nvim/init.fnl"
                           }
                           {
                             :icon  "  "

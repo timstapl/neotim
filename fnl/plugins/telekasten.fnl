@@ -6,12 +6,12 @@
 	]
 	:config (fn []
     ((. (require :telekasten) :setup) {
-			:home (vim.fn.expand "~/notes/docs") ;; Put the name of your notes directory here
-      :dailies (vim.fn.expand "~/notes/docs/daily")       ;; path to daily notes
-      :weeklies (vim.fn.expand "~/notes/docs/weekly")       ;; path to weekly notes
-      :templates (vim.fn.expand "~/notes/docs/templates")       ;; path to templates
+			:home (vim.fn.expand "~/Documents/wiki/gravie") ;; Put the name of your notes directory here
+      :dailies (vim.fn.expand "~/Documents/wiki/gravie/daily")       ;; path to daily notes
+      :weeklies (vim.fn.expand "~/Documents/wiki/gravie/weekly")       ;; path to weekly notes
+      :templates (vim.fn.expand "~/Documents/wiki/gravie/templates")       ;; path to templates
       ;; :template_new_note '/path/to/file'    -- template for new notes
-      :template_new_daily (vim.fn.expand "~/notes/docs/templates/daily.md")   ;; template for new daily notes
+      :template_new_daily (vim.fn.expand "~/Documents/wiki/gravie/templates/daily.md")   ;; template for new daily notes
       ;; :template_new_weekly '/path/to/file' ;; template for new weekly notes
 		  :take_over_my_home false
 			:auto_set_filetype false
