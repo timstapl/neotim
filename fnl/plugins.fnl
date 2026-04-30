@@ -25,7 +25,7 @@
              (require :plugins.cmp)
 
              ;; style 
-             (require :plugins.gruvbox)
+             (require :plugins.themes)
              (require :plugins.dashboard)
              (require :plugins.ccc)
              (require :plugins.bufferline)
@@ -53,14 +53,14 @@
              ;;todo
 
              ;; notes
-             (require :plugins.markdown_preview)
+             ;;(require :plugins.markdown_preview)
              (require :plugins.follow_md_links)
              (require :plugins.telekasten)
              (require :plugins.outline)
 
              ;; languages
              (require :plugins.fennel)
-             (require :plugins.markdown)
+             ;; (require :plugins.markdown)
              (require :plugins.poetry)
              (require :plugins.elixir)
 
@@ -86,6 +86,11 @@
              (require :plugins.whaler)
              (require :plugins.wrapped)
              (require :plugins.pyrola)
+             (require :plugins.candela)
+             (require :plugins.snacks)
+             ;;(require :plugins.scim)
+             (require :plugins.pomo)
+             (require :plugins.obsidian)
 
              ;; TODO: Planning to remove if I don't need these again soon
              ;; (require :plugins.dooing)

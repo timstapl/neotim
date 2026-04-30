@@ -54,6 +54,6 @@ local function _2_()
   local function _15_()
     return require("lspconfig").lua_ls.setup({capabilities = lsp_capabilities, settings = {Lua = {runtime = {version = "LuaJIT"}, diagnostics = {globals = {"vim"}}, workspace = {library = {vim.env.VIMRUNTIME}}}}})
   end
-  return require("mason-lspconfig").setup({ensure_installed = {"crystalline", "tailwindcss", "taplo", "rust_analyzer", "lua_ls", "jsonls", "clangd", "markdown_oxide"}, handers = {_14_, lua_ls = _15_}})
+  return require("mason-lspconfig").setup({ensure_installed = {"crystalline", "tailwindcss", "taplo", "rust_analyzer", "lua_ls", "jsonls", "clangd", "markdown"}, handers = {_14_, lua_ls = _15_}})
 end
 return {{"williamboman/mason.nvim", config = _1_}, {"williamboman/mason-lspconfig.nvim", config = _2_}}

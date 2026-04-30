@@ -37,7 +37,7 @@
           :lua_ls
           :jsonls
           :clangd
-          :markdown_oxide
+          :markdown
         ]
         :handers {
           1 (fn [server_name]

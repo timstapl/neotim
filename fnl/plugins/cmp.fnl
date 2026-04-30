@@ -35,11 +35,11 @@
         :completion (cmp.config.window.bordered)
         :documentation (cmp.config.window.bordered)
       }
-      :snippet {
-        :expand (fn [args]
-          ((. (require :cmp_luasnip) :lsp_expand) (. args :body))
-        )
-      }
+      ;; :snippet {
+        ;; :expand (fn [args]
+          ;; ((. (require :cmp_luasnip) :lsp_expand) (. args :body))
+        ;; )
+      ;; }
       :formatting {
         :format (fn [entry vim_item]
           (set vim_item.menu (. {

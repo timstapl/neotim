@@ -1,3 +1,0 @@
-[ 
- :sainnhe/gruvbox-material
-]
